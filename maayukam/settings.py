@@ -136,9 +136,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-# AWS_ACCESS_KEY_ID = 'AKIAI3TQX7TGLK2HGCQQ'
+# AW
 
-# AWS_SECRET_ACCESS_KEY = 'syU60WUqlNhuFiVBXwqGgOA48hdJn+cLU4Z1GpBG'
+
 
 # AWS_STORAGE_BUCKET_NAME = 'zappa-g4rdathrf'
 
