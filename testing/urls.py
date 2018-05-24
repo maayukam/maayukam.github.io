@@ -22,6 +22,6 @@ from exambattle import views
 urlpatterns = [
     url(r'admin/', admin.site.urls),
     # url(r'^main/',views.main,name="home")
-    url(r'testg/',views.testing,name="signup"),
-    url(r'signin/',views.signin,name="signin"),
+    url(r'testg/',views.signup,name="signup"),
+    # url(r'signin/',views.signin,name="signin"),
 ]

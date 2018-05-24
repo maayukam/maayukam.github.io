@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'maayukam.urls'
+ROOT_URLCONF = 'testing.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'maayukam.wsgi.application'
+WSGI_APPLICATION = 'testing.wsgi.application'
 
 
 # Database
@@ -135,12 +135,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
-
-# AWS_ACCESS_KEY_ID = 'AKIAI3TQX7TGLK2HGCQQ'
-
-# AWS_SECRET_ACCESS_KEY = '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'
-
-# AWS_STORAGE_BUCKET_NAME = 'zappa-g4rdathrf'
 
 # AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
