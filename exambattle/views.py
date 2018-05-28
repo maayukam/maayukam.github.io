@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import auth
 from django.contrib.auth import login,authenticate
-from exambattle.forms import SignUpForm
+from exambattle.forms import SignUpForm,QuestionForm
 # Create your views here
 from django.http import HttpResponse
 import datetime
@@ -18,3 +18,10 @@ def signup(request):
     else:
         form = SignUpForm()
     return render(request, 'index.html', {'form': form})
+
+def question(request):
+    form = QuestionForm(request.POST)
+    if form.is_valid():
+        form.save()
+        
+    return render(request,'index1.html',{'form':form} )

@@ -24,4 +24,5 @@ urlpatterns = [
     # url(r'^main/',views.main,name="home")
     url(r'testg/',views.signup,name="signup"),
     # url(r'signin/',views.signin,name="signin"),
+    url(r'post/',views.question,name="post"),
 ]
